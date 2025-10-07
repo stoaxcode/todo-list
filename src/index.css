@@ -1,0 +1,41 @@
+:root {
+  /* Colors */
+  --containerBg: #2d3142;
+  --white: #ffffff;
+  --orange: #ef8354;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #a3cef1;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.container {
+  width: 900px;
+  height: 700px;
+  background-color: var(--containerBg);
+  box-shadow: 0 2px 2px 1px #bfc0c0;
+  border-radius: 10px;
+  display: flex;
+}
+
+.header-logo-text {
+  color: var(--orange);
+  font-size: 2em;
+}
+
+.aside-bar {
+  width: 195px;
+  height: 100%;
+  background-color: var(--white);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}

@@ -7,7 +7,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "production",
+      title: "Noted po!",
+      template: "./src/template.html",
     }),
   ],
 
@@ -15,14 +16,32 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        oneOf: [
+          {
+            test: /\.module\.css/i,
+            use: [
+              "style-loader",
+              {
+                loader: "css-loader",
+                options: {
+                  modules: {
+                    localIdentName: "[name]_[local]__[hash:based64:5]",
+                  },
+                },
+              },
+            ],
+          },
+          {
+            use: ["style-loader", "css-loader"],
+          },
+        ],
       },
       {
-        test: "/.html$/i",
+        test: /.html$/i,
         loader: "html-loader",
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif|)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
       },
       {
@@ -32,7 +51,7 @@ module.exports = {
     ],
   },
   output: {
-    filename: "main.js",
+    filename: "[name].[contenthash].js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
