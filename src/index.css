@@ -5,6 +5,11 @@
   --orange: #ef8354;
 }
 
+@font-face {
+  font-family: "Inter";
+  src: url("./Inter-VariableFont_opsz,wght.woff") format("woff");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -29,7 +34,13 @@ body {
 
 .header-logo-text {
   color: var(--orange);
-  font-size: 2em;
+  font-size: 1.5em;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 5px;
 }
 
 .aside-bar {
@@ -38,4 +49,17 @@ body {
   background-color: var(--white);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  border: 1px solid var(--containerBg);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 25px;
+}
+
+li {
+  list-style: none;
+}
+
+.ul-primarylist {
+  margin-top: 20px;
 }
