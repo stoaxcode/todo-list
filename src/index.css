@@ -3,11 +3,13 @@
   --containerBg: #2d3142;
   --white: #ffffff;
   --orange: #ef8354;
+  --black: #000000;
 }
 
 @font-face {
   font-family: "Inter";
   src: url("./Inter-VariableFont_opsz,wght.woff") format("woff");
+  font-style: normal;
 }
 
 * {
@@ -38,9 +40,10 @@ body {
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
-  text-decoration: underline;
-  text-underline-offset: 6px;
-  text-decoration-thickness: 5px;
+}
+
+.logo-line-deco {
+  border: 3px solid var(--orange);
 }
 
 .aside-bar {
@@ -52,14 +55,50 @@ body {
   border: 1px solid var(--containerBg);
   display: flex;
   flex-direction: column;
-  gap: 10px;
   padding: 25px;
 }
 
 li {
   list-style: none;
+  margin-top: 10px;
+}
+
+li > button {
+  font-family: "Inter";
+  font-size: 1em;
+  font-weight: medium;
+}
+
+.aside-btn {
+  width: 100%;
+  height: 28px;
+  background: none;
+  padding: 2px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  align-items: center;
+}
+
+.aside-btn:hover {
+  background: #ef82545e;
+  border-radius: 4px;
+  color: #ef8354;
 }
 
 .ul-primarylist {
-  margin-top: 20px;
+  margin-top: 40px;
+}
+
+h4 {
+  margin-top: 15px;
+  font-family: "Inter";
+  font-size: 1.1em;
+  font-weight: small;
+}
+
+.project-line-deco {
+  border-top: 2px solid var(--containerBg);
 }
