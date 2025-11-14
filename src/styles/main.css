@@ -26,7 +26,6 @@ body {
   min-height: 100vh;
 }
 
-/* Header */
 .header {
   background: white;
   padding: 1rem 2rem;
@@ -40,7 +39,6 @@ body {
   font-size: 1.8rem;
 }
 
-/* Main Layout */
 .main-container {
   display: flex;
   justify-content: center;
@@ -61,7 +59,6 @@ body {
   min-height: 600px;
 }
 
-/* Sidebar */
 .sidebar {
   width: 280px;
   background: var(--sidebar-bg);
@@ -126,7 +123,6 @@ body {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* Content Area */
 .content {
   flex: 1;
   padding: 2rem;
@@ -403,7 +399,6 @@ textarea {
   margin-top: 1rem;
 }
 
-/* Empty State */
 .empty-state {
   text-align: center;
   color: var(--text-light);
