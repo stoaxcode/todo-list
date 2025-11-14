@@ -1,4 +1,7 @@
 {
+  "dependencies": {
+    "date-fns": "^2.30.0"
+  },
   "devDependencies": {
     "css-loader": "^7.1.2",
     "html-loader": "^5.1.0",
@@ -48,6 +51,7 @@
     "cookie": "^0.7.1",
     "cookie-signature": "^1.0.6",
     "core-util-is": "^1.0.3",
+    "date-fns": "^4.1.0",
     "debug": "^2.6.9",
     "default-browser": "^5.2.1",
     "default-browser-id": "^5.0.0",
