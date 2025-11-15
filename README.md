@@ -12,13 +12,13 @@ JavaScript and Webpack.
 
 ## Built With
 
-- Express\
-- JSON\
-- npm\
-- Webpack\
-- JavaScript\
-- Ajv\
-- CSS\
+- Express
+- JSON
+- npm
+- Webpack
+- JavaScript
+- Ajv
+- CSS
 - date-fns
 
 ---
@@ -34,12 +34,12 @@ and Webpack bundling.
 
 ## Features
 
-- Create, edit, and delete tasks\
-- Organize tasks into projects\
-- Assign due dates using date-fns\
-- Persistent storage using localStorage\
-- Dynamic DOM rendering\
-- Modular ES6 structure\
+- Create, edit, and delete tasks
+- Organize tasks into projects
+- Assign due dates using date-fns
+- Persistent storage using localStorage
+- Dynamic DOM rendering
+- Modular ES6 structure
 - Webpack dev/prod builds
 
 ---
@@ -68,7 +68,7 @@ and Webpack bundling.
 
 ### Prerequisites
 
-- JavaScript\
+- JavaScript
 - npm
 
 ### Installation
@@ -95,9 +95,9 @@ npm test
 
 ## Roadmap
 
-- [x] Initial UI and project structure\
-- [ ] Add task filtering\
-- [ ] Add project color coding\
+- [x] Initial UI and project structure
+- [ ] Add task filtering
+- [ ] Add project color coding
 - [ ] Implement drag-and-drop sorting
 
 ---
@@ -118,4 +118,3 @@ repository.
 ## Acknowledgments
 
 Thanks to contributors, inspiration sources, and open‑source tools.
-:::
